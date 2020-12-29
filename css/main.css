@@ -1,0 +1,1040 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+
+/* reset.css */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* common */
+.wrap {
+    font: 14px "Noto Sans KR", sans-serif;
+}
+
+.en {
+    font-family: "Exo 2", sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+br.mo {
+    display: none;
+}
+.gnb-mobile {
+    display: none;
+}
+
+.gnb-mobile {
+    display: none;
+}
+
+/* header */
+header {
+    background: rgba(0,0,0, 0.2);
+    width: 100%;
+
+    /* 
+    높이와 line-height를 맞추면 내부요소가
+    중앙으로 떨어짐
+    */
+    height: 100px;
+    line-height: 100px;
+
+    position: fixed;
+    z-index: 10;
+}
+
+header .inner-header {
+    /* background: skyblue; */
+    width: 1600px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+header .inner-header .logo {
+    float: left;
+    width: 200px;
+}
+
+header .inner-header .logo img {
+    width: 100%;
+}
+
+header .inner-header .gnb {
+    float: left;
+    margin-left: 80px;
+}
+
+header .inner-header .gnb li {
+    float: left;
+    margin-right: 80px;
+}
+
+header .inner-header .gnb li a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+}
+
+header .inner-header .gnb li a:hover {
+    color: #ff8342;
+}
+
+header .inner-header .tnb {
+    float: right;
+}
+
+header .inner-header .tnb li {
+    float: left;
+    margin-right: 25px;
+}
+
+header .inner-header .tnb li a {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+header .inner-header .tnb li:first-child a i,
+header .inner-header .tnb li:nth-child(2) a i
+ {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+header .inner-header .tnb li:last-child a {
+    display: block;
+    width: 105px;
+    line-height: 2;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    margin-top: 34px;
+}
+
+header .inner-header .tnb li:last-child a:hover {
+    background: #fff;
+    color: #ff8342;
+}
+
+header .inner-header .tnb li:last-child a i {
+    margin-left: 5px;
+}
+
+/* section main */
+section.main {
+    height: 100vh;
+    background: url("../img/vis_4.jpg") no-repeat center/cover fixed;    
+    position: relative;
+}
+
+section.main .main-title {
+    position: absolute;
+    /* 포지션 absolute로 박스 한가운데 배치 */
+    /* background: red; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #fff;
+    text-align: center;
+    /* x-offset y-offset blur shadow-color */
+    text-shadow: 2px 2px 5px rgba(0,0,0, 0.7);
+}
+
+section.main .main-title h2 {
+    font-size: 55px;
+    margin-top: 20px;
+}
+
+section.main .main-title p {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+section.main .main-title .view {
+    display: block;
+    font-size: 15px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    width: 180px;
+    margin: 0 auto;
+    padding: 8px 0;
+    letter-spacing: 1px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+section.main .main-title .view::after {
+    content: "";
+    width: 0;
+    height: 100%;
+    background: rgba(255,255,255, 0.4);    
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+}
+
+section.main .main-title .view:hover::after {
+    width: 100%;
+}
+
+/* section about */
+section.about {
+    background: #fff;
+    padding: 80px 0;
+}
+
+section .title {
+    color: #000;
+    text-align: center;
+}
+
+<<<<<<< HEAD
+section.title h2 {
+=======
+section .title h2 {
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+
+<<<<<<< HEAD
+section.title h2 span {
+    color: #ff8342;
+}
+
+section.title p {
+=======
+section .title h2 span {
+    color: #ff8342;
+}
+
+section .title p {
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+    font-size: 18px;
+    color: #555;
+}
+
+section ul {
+    /* background: red; */
+    width: 1400px;
+    margin: 30px auto;
+    border-bottom: 1px solid #ddd;
+}
+
+section.about ul li {
+    float: left;
+    width: 33.3333%;
+}
+
+section.about ul li a .img-box {
+    overflow: hidden;
+}
+
+section.about ul li a .img-box img {
+    width: 100%;
+    transition: 0.8s;
+}
+
+section.about ul li a:hover .img-box img {
+    transform: scale(1.2);
+}
+
+section.about ul li a .text {
+    padding: 25px;
+}
+
+section.about ul li a .text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+section.about ul li a .text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+section.about ul li a .text p.more {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 40px;
+    padding-top: 7px;
+    position: relative;
+}
+
+section.about ul li a .text p.more::before {
+    content: "\f30b";
+    font-family: "Font Awesome 5 Free";
+    font-size: 15px;
+    line-height: 2;
+
+    width: 30px;
+    height: 30px;
+    background: #ff8342;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+/* section innovation
+section.innovation {
+    margin-bottom: 150px;
+}
+
+/* section.innovation .title {
+    color: #000;
+    text-align: center;
+}
+section.innovation .title h2 {
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+section.innovation .title h2 span {
+    color: #ff8342;
+}
+section.innovation .title p {
+    font-size: 18px;
+    color: #555;
+} */
+
+section.innovation .img-box {
+    width: 1400px;
+    height: 540px;
+    background: url("../img/product_1.jpg") no-repeat center/cover;
+    margin: 50px auto 0;
+    position: relative;
+}
+
+section.innovation .img-box .inner {
+    background: #3a3c4e;
+    width: 80%;
+
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%);
+}
+
+section.innovation .img-box .inner h3 {
+    background: #fff;
+    padding: 25px 45px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+section.innovation .img-box .inner .bottom {
+    padding: 35px 85px;
+    color: #fff;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+section.innovation .img-box .inner .bottom p {
+    float: left;
+}
+section.innovation .img-box .inner .bottom a {
+    float: right;
+    padding: 7px 30px;
+    background: #ff8342;
+    border-radius: 50px;
+}
+section.innovation .img-box .inner .bottom a:hover {
+    background: #f86010;
+}
+
+<<<<<<< HEAD
+
+section.me {
+    margin-bottom: 150px;
+    padding: 80px 0;
+    background:url("../img/me.jpg") no-repeat center/cover;
+}
+section.me ul.list {
+    width: 1400px;
+    margin: 50px auto;
+}
+=======
+/* section me */
+section.me {
+    margin-bottom: 150px;
+    padding: 80px 0;
+    background: url("../img/me.jpg") no-repeat center/cover;
+}
+
+section.me ul.list {
+    width: 1400px;
+    margin: 50px auto;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+section.me ul.list > li {
+    padding: 30px 60px;
+    /* background: orange; */
+}
+
+section.me ul.list > li:first-child {
+    border-bottom: 1px solid #ddd;
+}
+<<<<<<< HEAD
+section.me ul.list > li h3{
+=======
+
+section.me ul.list > li h3 {
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+    font-size: 18px;
+    margin-bottom: 20px;
+    /* background: red; */
+    position: relative;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+section.me ul.list > li h3 span {
+    color: #ff8342;
+    position: absolute;
+    left: -35px;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+section.me ul.list > li p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+<<<<<<< HEAD
+section.me.list> li a.more {
+=======
+
+section.me ul.list > li a.more {
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.6;
+    display: inline-block;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+section.me ul.list > li a.more span {
+    color: #ff8342;
+    margin-left: 3px;
+    font-size: 14px;
+}
+<<<<<<< HEAD
+section.me ul.in {
+    margin-bottom; 30px;
+}
+section.me ul.in li {
+    margin-bottom: 10px;
+}
+section.me ul.in li em {
+    float: left;
+    width: 12%;
+    font-weight: 700;
+}
+section.me ul.in li p {
+    float: left;
+    width: 12%;
+}
+section.me ul.in li p::before {
+ content: "";
+ display: block;
+ width: 4px;
+ height: 4px;
+ background: #000;
+ border-radius: 50%; 
+
+ position: absolute;
+ left: -40px;
+ top: 8px;
+}
+#incruit-btn{
+=======
+
+section.me ul.in {
+    margin-bottom: 30px;
+}
+
+section.me ul.in li {
+    margin-bottom: 10px;
+}
+
+section.me ul.in li em {
+    float: left;    
+    width: 12%;
+    font-weight: 700;
+    /* background: orange; */
+}
+
+section.me ul.in li p {
+    float: left;
+    width: 88%;
+    position: relative;
+}
+
+section.me ul.in li p::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: #ff8342;
+    border-radius: 50%;
+
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+#incruit-btn {
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+    display: block;
+    width: 280px;
+    background: #ff8342;
+    padding: 10px 0;
+    margin: 0 auto;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+}
+
+<<<<<<< HEAD
+#incruit-btn::focus {
+    outline: none;
+}
+=======
+#incruit-btn:focus {
+    outline: none;
+}
+
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+/* section sns */
+section.sns {
+    margin-bottom: 60px;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+section.sns ul {
+    width: 1400px;
+    margin: 50px auto;
+}
+
+section.sns ul li {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+<<<<<<< HEAD
+section.sns ul li a {
+    display: block;
+}
+=======
+section.sns ul li:last-child {
+    margin-right: 0;
+}
+
+section.sns ul li a {
+    display: block;
+}
+
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+section.sns ul li a .img-box {
+    height: 251px;
+    overflow: hidden;
+    position: relative;
+}
+<<<<<<< HEAD
+section.sns ul li a .img-box::before{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 100;
+    background: rgba(255, 131, 66, 0.7);
+    
+=======
+
+section.sns ul li a .img-box::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    background: rgba(255, 131, 66, .85);
+
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .5s;
+}
+<<<<<<< HEAD
+section.sns ul li a:hover .img-box::before {
+    width: 100%;
+}
+section.sns ul li a.img-box::after {
+=======
+
+section.sns ul li a:hover .img-box::before {
+    width: 100%;
+}
+
+section.sns ul li a .img-box::after {
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+    content: "BLOG";
+    font: 15px "Exo 2", sans-serif;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    padding: 5px 30px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+    transition: 0.7s;
+}
+<<<<<<< HEAD
+section.sns ul li a:hover .img-box::after {
+    opacity: 1;
+}
+section.sns ul li a .img-box img {
+    width: 100%;
+}
+=======
+
+section.sns ul li a:hover .img-box::after {
+    opacity: 1;
+}
+
+section.sns ul li a .img-box img {
+    width: 100%;
+}
+
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+section.sns ul li a .bottom {
+    padding: 20px 0 20px 30px;
+    box-sizing: border-box;
+}
+<<<<<<< HEAD
+section.sns ul li a .bottom p{
+
+}
+section.sns ul li a .bottom p.time{
+=======
+
+section.sns ul li a .bottom p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+section.sns ul li a .bottom p.color {
+    color: #ff8342;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+section.sns ul li a .bottom p.time {
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+    color: #999;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 400;
+<<<<<<< HEAD
+}
+section.sns ul li a .bottom p.time::before{
+    content: "/f017";
+=======
+    position: relative;
+    padding-left: 20px;
+}
+
+section.sns ul li a .bottom p.time::before {
+    content: "\f017";
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+    font-family: "Font Awesome 5 Free";
+    font-size: 15px;
+
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+/* footer */
+footer {
+    border-top: 1px solid #999;
+    padding: 30px 0;
+}
+
+footer .inner {
+    width: 1600px;
+    margin: 0 auto;
+}
+<<<<<<< HEAD
+footer .inner . ft-logo {
+=======
+
+footer .inner .ft-logo {
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+    float: left;
+    width: 14%;
+    height: 100px;
+}
+<<<<<<< HEAD
+footer .inner .ft-logo img{
+=======
+
+footer .inner .ft-logo img {
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+footer .inner .address {
+    float: left;
+    margin-left: 100px;
+    margin-top: 24px;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+footer .inner .address li:first-child {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+<<<<<<< HEAD
+footer .inner .address li:nth-last-child{
+    color: #000;
+}
+footer .inner .list {
+    float: right;
+}
+=======
+footer .inner .address li:last-child {
+    color: #999;
+}
+
+footer .inner .list {
+    float: right;
+    margin-top: 30px;
+}
+
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+footer .inner .list li {
+    float: left;
+    margin-left: 80px;
+}
+<<<<<<< HEAD
+footer .inner .list li:last-child{
+    font-weight: 700;
+}
+footer .inner .li a:hover {
+=======
+
+footer .inner .list li:last-child {
+    font-weight: 700;
+}
+
+footer .inner .list li a:hover {
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+    color: #ff8342;
+    text-decoration: underline;
+}
+
+<<<<<<< HEAD
+/* 반응형작업 */
+
+/* 노트북 해상도 1599px */
+@media screen and (max-width: 1599px) {
+    
+    header .inner-header {
+        width: 95%;
+    }
+    header .inner-header .gnb {
+    
+        margin-left: 40px;
+    }
+    header .inner-header .gnb li {
+        margin-right: 40px;
+    }
+    header .inner-header .tnb {
+        margin-right: 10px;
+    }
+=======
+/* 반응형 작업 */
+
+/* 노트북 해상도 1599px  */
+@media screen and (max-width: 1599px) {
+
+    header .inner-header {
+        width: 95%;
+    }
+
+    header .inner-header .gnb {
+        margin-left: 50px;
+    }
+
+    header .inner-header .gnb li {
+        margin-right: 40px;
+    }
+
+    header .inner-header .tnb li {
+        margin-right: 10px;
+    }
+
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+    section.about ul,
+    section.innovation .img-box,
+    section.me ul.list,
+    section.sns ul {
+        width: 95%;
+    }
+<<<<<<< HEAD
+    footer .inner {
+        width: 95%;
+    }
+    
+}    
+
+/* 태블릿 1024px 해상도 (아이패드 프로) */
+@media screen and (max-width: 1024px) {
+    
+=======
+
+    footer .inner {
+        width: 95%;
+    }
+
+    footer .inner .list li {
+        margin-left: 20px;
+    }
+}
+
+/* 태블릿 1024px 해상도 (아이패드 프로) */
+@media screen and (max-width: 1024px) {
+
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+    header .inner-header .gnb,
+    header .inner-header .tnb {
+        display: none;
+    }
+
+<<<<<<< HEAD
+    header .inner-header .gnb-mobile{
+=======
+    header .inner-header .gnb-mobile {
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+        display: block;
+        color: #fff;
+        font-size: 40px;
+        float: right;
+    }
+
+<<<<<<< HEAD
+    section.main .main-title{
+        width: 80%;
+    }
+    section.me ul.list > li p{
+        margin-bottom: 10px;
+    }
+    section.me ul.in li {
+        margin-bottom: 0;
+    }
+    section.me ul.in li p::before {
+        left: -20px;
+    }
+    section.sns ul li a .img-box img{
+    height: 170px;}
+
+    footer .inner .ft-logo img{
+        margin-top: 20px;
+        height: auto;
+    }
+=======
+    section.main .main-title {
+        width: 80%;
+    }
+
+    section.me {
+        margin-bottom: 50px;
+    }
+
+    section.me ul.list > li p {
+        margin-bottom: 10px;
+    }
+
+    section.me ul.in li {
+        margin-bottom: 0;
+    }
+
+    section.me ul.in li p::before {
+        left: -20px;
+    }
+
+    section.sns ul li a .img-box {
+        height: 170px;
+    }
+
+    footer .inner .ft-logo {
+        margin-top: 20px;
+    }
+
+    footer .inner .ft-logo img {
+        height: auto;
+    }
+
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+    footer .inner .list {
+        display: none;
+    }
+}
+
+/* 태블릿 768px 해상도 (아이패드) */
+@media screen and (max-width: 768px) {
+<<<<<<< HEAD
+    section.main .main-title h2 {
+        font-size: 4px;
+=======
+
+    section.main .main-title h2 {
+        font-size: 40px;
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+    }
+    section.main .main-title p {
+        font-size: 20px;
+    }
+<<<<<<< HEAD
+    section.about {
+        padding: 50px 0;
+    }
+    section.about ul li {
+        float: none;
+    }
+    section.about ul li a .img-box {
+        height: 400px;
+    }
+    section.innovation.img-box .iner .bottom{
+        float: none;
+        margin-bottom: 30px;
+
+    }
+    section.about ul.img-box .inner .bottom a{
+        float: none;
+        display: inline-block;
+=======
+
+    section.about {
+        padding: 50px 0;
+    }
+
+    section.about ul li {
+        float: none;
+        width: 100%;
+    }
+
+    section.about ul li a .img-box {
+        height: 400px;
+    }
+
+    section.innovation .img-box .inner .bottom {
+        padding: 30px;
+    }
+
+    section.innovation .img-box .inner .bottom p {
+        float: none;
+        margin-bottom: 30px;
+    }
+
+    section.innovation .img-box .inner .bottom a {
+        float: none;
+        display: block;
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+        width: 100px;
+        text-align: center;
+        margin: 0 auto;
+    }
+<<<<<<< HEAD
+    section.me {
+        padding: 50px 0;
+    }
+    section.me ul.li.
+
+    section.sns ul li a.bottom p.time {
+        margin-top: 10px;
+    }
+
+    footer .inner .ft-logo{
+=======
+
+    section.me {
+        padding: 50px 0;
+    }
+
+    section.me ul.in li em {
+        float: none;
+        width: 100%;
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+
+    section.sns ul li {
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    section.sns ul li a .img-box {
+        height: 380px;
+    }
+
+    section.sns ul li a .bottom p.time {
+        margin-top: 10px;
+    }
+
+    footer .inner .ft-logo {
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+        float: none;
+        width: 30%;
+        margin: 0 auto;
+    }
+<<<<<<< HEAD
+    footer .inner .adress {
+=======
+
+    footer .inner .address {
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3036ab4974ae222f16ac98606eb2ff326f35d7f5
+}
